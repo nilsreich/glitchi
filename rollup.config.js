@@ -10,12 +10,12 @@ import tailwind from 'tailwindcss'
 
 const production = !process.env.ROLLUP_WATCH
 const removeUnusedCss = purgeCss({
-  content: ['./public/*.js','./views/*.html','./public/*.css'],
+  content: ['./src/*.js','./public/*.html','./src/*.css'],
   defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || [],
 })
 
 export default {
-  input: 'public/client.js',
+  input: 'src/index.js',
   output: {
     sourcemap: true,
     format: 'esm',
