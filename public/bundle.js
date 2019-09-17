@@ -1,0 +1,2 @@
+let e,t=document.getElementById("butOpenFile"),a=document.getElementsByTagName("textarea")[0];t.addEventListener("click",async t=>{e=await window.chooseFileSystemEntries();const n=await e.getFile(),c=await n.text();a.value=c}),document.getElementById("save").addEventListener("click",async t=>{const n=a.value;!async function(e,t){const a=await e.createWriter();await a.truncate(0),await a.write(0,t),await a.close()}(e,n)}),console.log("test");
+//# sourceMappingURL=bundle.js.map
