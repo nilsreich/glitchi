@@ -27,7 +27,7 @@
     "now": "^15.0.6"
   },
   "engines": {
-    "node": "11.8"
+    "node": "10.x"
   },
   "repository": {
     "url": "https://glitch.com/edit/#!/hello-express"
