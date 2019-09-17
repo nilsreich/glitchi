@@ -7,7 +7,8 @@
   "description": "A simple Node app built on Express, instantly up and running.",
   "main": "server.js",
   "scripts": {
-    "start": "rollup -c && node server.js"
+    "start": "rollup -c && node server.js",
+    "build": "rollup -c"
   },
   "dependencies": {
     "express": "^4.16.4",
